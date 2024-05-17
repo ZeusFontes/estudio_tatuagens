@@ -1,90 +1,112 @@
-<html> 
-    <head>
-<style>
-    *{
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-    }
-    body{
-        background-color: rgb(255, 255, 255);
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    }
-    #logo{
-        width: 120px;
-
-    }
-    header{
-        text-align: center;
-        width: 100%;
-        background-color: white;
-        position: sticky;
-        top: 0px;
-        padding: 10;
-        
-
-    }
-
-    .imgs{
-
-        width: 260px;
-        height: 440px;
-        padding: 2%;
-        border-radius: 100px;
-    }
-    .galeria{
-        display: flex;
-        justify-content: center;
-    }
-    .galeria a{
-        padding: 2%;
-
-    }
-    .box4 {
-            padding: 10px;
-            width: 10%;
-            height: 40%;
-            color: rgb(255, 255, 255);
-            min-height: 50;
+    <html> 
+        <head>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(255, 255, 255);
+            font-family:courier,arial,helvetica;
+        }
+        #logo{
+            width: 120px;
+        }
+        header{
+            width: 100%;
+            background-color: white;
+            position: sticky;
+            top: 0px;
+            justify-content: space-around       ;
+            display: flex;
+        }
+        .linksh{
+            color: black;
+            margin-top: 2.8%;
+            margin-bottom: 2% ;
+        }
+        .linksh:hover{
+            color:white;
             background-color: black;
-            margin-top: 20%;
         }
 
-</style>
-    </head>
-    <body>
-        <header>
+        .imgs{
+            width: 260px;
+            height: 440px;
+            padding: 2%;
+            border-radius: 60px;
+        }
+        .galeria{
+            display: flex;
+            justify-content: center;
+        }
+        .galeria a{
+            padding: 2%;
 
-            <a href="https://www.youtube.com/watch?v=UIJWat1rJqc" target="_blank"><img id="logo" class="center" src="https://i.imgur.com/lLwrB5i.png"></a>
+        }
+        .box4 {
+                padding: 10px;
+                width: 260px;
+                height: 40%;
+                color: rgb(255, 255, 255);
+                min-height: 50;
+                background-color: black;
+                margin-top: 20%;
+            }
+        .box4 input{
+            font-family:courier,arial,helvetica;
+        }
+        .cadas{
+            margin-top: 10px;
+            padding: 1%;
+            background-color: rgb(29, 29, 29);
+            color: white;
+        }
 
-        </header>
-        <section class="galeria">
-            <a href="https://www.youtube.com/watch?v=UIJWat1rJqc"><img class="imgs" src="https://i.pinimg.com/564x/f8/d6/fd/f8d6fdf0ef81503649d75f17ed4f491c.jpg"></a>
-            <a href="https://www.youtube.com/watch?v=UIJWat1rJqc"><img class="imgs" src="https://i.pinimg.com/564x/c7/f9/7c/c7f97c37ca9c9f80075d5809d114e8c1.jpg"></a>
-            <a href="https://www.youtube.com/watch?v=UIJWat1rJqc"><img class="imgs" src="https://i.pinimg.com/564x/f6/e7/b6/f6e7b6e83f08afc1fdeeab94d15aa4ea.jpg"></a>
-            <a href="https://www.youtube.com/watch?v=UIJWat1rJqc"><img class="imgs" src="https://i.pinimg.com/564x/c7/f9/7c/c7f97c37ca9c9f80075d5809d114e8c1.jpg"></a>
-            <a href="https://www.youtube.com/watch?v=UIJWat1rJqc"><img class="imgs" src="https://i.pinimg.com/564x/f6/e7/b6/f6e7b6e83f08afc1fdeeab94d15aa4ea.jpg"></a>
-        </section>
+    </style>
+        <meta charset="utf-8">
+        </head>
+        <body>
+            <header>
+                <a class="linksh" href="https://www.youtube.com/watch?v=UIJWat1rJqc">ESTÚDIO</a>
+                <a class="linksh" href="https://www.youtube.com/watch?v=UIJWat1rJqc">TATUADORES</a>
 
-        </section>
-        <section  id="formulario" class="conteudo box4">
-            <p style="font-size: 20px;">Contato</p>
-            <form method="get" action="Obrigado.html">
-                <label>Digite seu nome:</label><br>
-                <input type="text" name="nome" required><br>
-    
-                <label>Digite seu email:</label><br>
-                <input type="email" name="email" required><br>
-                <label>Marque o dia da visita:</label><br>
-                <input type="date"  name="marcar dia" required><br>
-                <label>Informação a mais:</label><br>
-                <textarea name="mensagem"></textarea>
-                <input type="submit" value="Cadastrar" required><br>
-               
+                <a href="https://www.youtube.com/watch?v=UIJWat1rJqc" target="_blank"><img id="logo" class="center" src="https://i.imgur.com/lLwrB5i.png"></a>
+
+                <a class="linksh" href="https://www.youtube.com/watch?v=UIJWat1rJqc">FALE CONOSCO</a>
+                <a class="linksh" href="https://www.youtube.com/watch?v=UIJWat1rJqc">SOBRE NÓS</a>
+
+            </header>
+
+
+            <section class="galeria">
+                <a href="https://www.youtube.com/watch?v=UIJWat1rJqc"><img class="imgs" src="https://i.pinimg.com/564x/f8/d6/fd/f8d6fdf0ef81503649d75f17ed4f491c.jpg"></a>
+                <a href="https://www.youtube.com/watch?v=UIJWat1rJqc"><img class="imgs" src="https://i.pinimg.com/564x/c7/f9/7c/c7f97c37ca9c9f80075d5809d114e8c1.jpg"></a>
+                <a href="https://www.youtube.com/watch?v=UIJWat1rJqc"><img class="imgs" src="https://i.pinimg.com/564x/f6/e7/b6/f6e7b6e83f08afc1fdeeab94d15aa4ea.jpg"></a>
+                <a href="https://www.youtube.com/watch?v=UIJWat1rJqc"><img class="imgs" src="https://i.pinimg.com/564x/c7/f9/7c/c7f97c37ca9c9f80075d5809d114e8c1.jpg"></a>
+            </section>
+
             
-                <label></label>
+            <section  id="formulario" class="conteudo box4">
+                <p style="font-size: 20px;">Contato ☎</p>
+                <form method="get" action="Obrigado.html">
+                    <label>Digite seu nome:</label><br>
+                    <input type="text" name="nome" required><br>
+        
+                    <label>Digite seu email:</label><br>
+                    <input type="email" name="email" required><br>
+                    <label>Marque o dia da visita:</label><br>
+                    <input type="date"  name="marcar dia" required><br>
+                    <label>Mensagem:</label><br>
+                    <textarea name="mensagem"></textarea><br>
+                    <input class="cadas" type="submit" value="Enviar" required><br>
                 
-            </form>
-        </section>
-    </body>
-</html>
+                
+                    <label></label>
+                    
+                </form>
+            </section>
+
+        </body>
+    </html>

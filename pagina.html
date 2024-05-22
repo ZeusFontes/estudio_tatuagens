@@ -1,62 +1,323 @@
-<html> 
-    <head>
-<style>
-    *{
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-    }
-    body{
-        background-color: rgb(255, 0, 0);
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    }
-    #logo{
-        width: 120px;
-        background-color: rgb(197, 197, 197);
+<html>
 
-    }
-    header{
-        text-align: center;
-        width: 100%;
-        background-color: white;
-        position: sticky;
-        top: 0px;
-        padding: 10;
+<head>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(255, 255, 255);
+            font-family: courier, arial, helvetica;
+        }
+
+        #logo {
+            width: 120px;
+        }
+
+        header {
+            width: 100%;
+            background-color: white;
+            position: sticky;
+            top: 0px;
+            justify-content: space-around;
+            display: flex;
+            z-index: 6;
+        }
+
+        .linksh {
+            color: black;
+            margin-top: 2.8%;
+            margin-bottom: 2%;
+        }
+
+        .linksh:hover {
+            color: white;
+            background-color: black;
+        }
+
+        .imgs {
+            width: 260px;
+            height: 440px;
+            padding: 2%;
+            border-radius: 60px;
+        }
+
+        .galeria {
+            display: flex;
+            justify-content: center;
+        }
+
+        .galeria a {
+            padding: 2%;
+
+        }
+
+        .box4 {
+            padding: 10px;
+            width: 260px;
+            height: 40%;
+            color: rgb(255, 255, 255);
+            min-height: 50;
+            background-color: black;
+            margin-top: 20%;
+        }
+
+        .box4 input {
+            font-family: courier, arial, helvetica;
+        }
+
+        .cadas {
+            margin-top: 10px;
+            padding: 1%;
+            background-color: rgb(29, 29, 29);
+            color: white;
+        }
+        .tatuadores{
+            background-color: black;
+            width: 20%;
+            border-style: solid;
+            border-color: rgb(255, 255, 255);
+            border-width: 5px;
+            display: flex;
+            max-height: 245px;
+        }
+        .tatuadores section{
+            width: 100%;
+            height: 100%;
+            padding: 5%;
+        }
+        .tatuadores h1{
+            color: black;
+            width: 450%;
+            max-height: 245px;
+            word-break: break-word;
+            margin-bottom:6% ;
+            display: inline-block;
+
+        }
+        .tatuadores p{
+
+            color: white;
+            margin-top: 30%;
+            display: inline;
+            word-break: break-word;
+            font-size: clamp(12px, 1vw, 14px);
+        }
+        .tatuadores img{
+            max-width:150px;
+            will-change: 20%;
+            margin-top: 2%;
+            max-height: 100%;
+        }
+        mark{
+            background-color: white;
+        }
+        .linha{
+            display: flex;
+        }
+        .letreiro{
+            background-color: black;
+            color: white;
+            white-space: nowrap;
+            text-overflow: clip;
+            border-top-style: solid;
+            border-right-style: solid;
+            border-bottom-style: none;
+            border-left-style: solid;
+            border-color: rgb(255, 255, 255);
+            border-width: 5px;
+        }
+        .letreiro2{
+            background-color: black;
+            color: white;
+            white-space: nowrap;
+            text-overflow: clip;
+            border-top-style: none;
+            border-right-style: solid;
+            border-bottom-style: solid;
+            border-left-style: solid;
+            border-color: rgb(255, 255, 255);
+            border-width: 5px;
+        }
+
+        .imgb{
+            width: 480px;
+            height: 340px;
+            display: inline-block;
+            position: relative; 
+            min-width: 340px;
+            z-index: 1;
+        }
+        .imgb2{
+            width: 210px;
+            height: 200px;
+            display: inline-block;
+            position: relative;
+            margin-bottom: 140px;
+        }
+        .imgb3{
+            width: 100px;
+            height: 130px;
+            display: inline-block;
+            margin-left: -219.5px;
+ 
+        }
+        .imgb4{
+            width: 100px;
+            height: 130px;
+            display: inline-block;
+        }
+
+        .coluna{
+            display: inline-flex;
+            width: 100%;
+            margin-top: 150px;
+        }
+        .box1{
+            background-color: black;
+            width: 62%;
+            padding: 3%;
+            padding-left: 5%;
+            
+        }
+        .box2{
+            background-color: black;
+            width: 38%;
+            padding: 20px;
+        }
+        .font{
+            font-family: 'Courier New', Courier, monospace;
+            color: white;
+        }
+        .box2 h2{
+            background-color: white;
+            color: black;
+        }
+        .box2 h2,.box2 p,.box2 h3{
+            display: inline-block;
+            margin: 17px;
+        }
         
 
-    }
+    </style>
+    <meta charset="utf-8">
+</head>
 
-    .imgs{
+<body>
+    <header>
+        <a class="linksh" href="#ESTUDIO">ESTÚDIO</a>
+        <a class="linksh" href="#TATUADORES">TATUADORES</a>
 
-        width: 260px;
-        height: 440px;
-        padding: 2%;
-        border-radius: 100px;
-    }
-    .galeria{
-        display: flex;
-        justify-content: center;
-    }
-    .galeria a{
-        padding: 2%;
+        <a href="https://www.youtube.com/watch?v=UIJWat1rJqc" target="_blank"><img id="logo" class="center"
+                src="https://i.imgur.com/lLwrB5i.png"></a>
 
-    }
+        <a class="linksh" href="#GALERIA">GALERIA</a>
+        <a class="linksh" href="https://www.youtube.com/watch?v=UIJWat1rJqc">FALE CONOSCO</a>
 
-</style>
-    </head>
-    <body>
-        <header>
+    </header>
 
-            <a href="https://www.youtube.com/watch?v=UIJWat1rJqc" target="_blank"><img id="logo" class="center" src="xd2.png"></a>
 
-        </header>
-        <section class="galeria">
-            <a href="https://www.youtube.com/watch?v=UIJWat1rJqc"><img class="imgs" src="https://i.pinimg.com/564x/f8/d6/fd/f8d6fdf0ef81503649d75f17ed4f491c.jpg"></a>
-            <a href="https://www.youtube.com/watch?v=UIJWat1rJqc"><img class="imgs" src="https://i.pinimg.com/564x/c7/f9/7c/c7f97c37ca9c9f80075d5809d114e8c1.jpg"></a>
-            <a href="https://www.youtube.com/watch?v=UIJWat1rJqc"><img class="imgs" src="https://i.pinimg.com/564x/f6/e7/b6/f6e7b6e83f08afc1fdeeab94d15aa4ea.jpg"></a>
+    <section class="galeria" id="GALERIA">
+        <a href="https://www.youtube.com/watch?v=UIJWat1rJqc"><img class="imgs"
+                src="https://i.pinimg.com/564x/f8/d6/fd/f8d6fdf0ef81503649d75f17ed4f491c.jpg"></a>
+        <a href="https://www.youtube.com/watch?v=UIJWat1rJqc"><img class="imgs"
+                src="https://i.pinimg.com/564x/c7/f9/7c/c7f97c37ca9c9f80075d5809d114e8c1.jpg"></a>
+        <a href="https://www.youtube.com/watch?v=UIJWat1rJqc"><img class="imgs"
+                src="https://i.pinimg.com/564x/f6/e7/b6/f6e7b6e83f08afc1fdeeab94d15aa4ea.jpg"></a>
+        <a href="https://www.youtube.com/watch?v=UIJWat1rJqc"><img class="imgs"
+                src="https://i.pinimg.com/564x/c7/f9/7c/c7f97c37ca9c9f80075d5809d114e8c1.jpg"></a>
+        <a href="https://www.youtube.com/watch?v=UIJWat1rJqc"><img class="imgs"
+                src="https://i.pinimg.com/564x/f6/e7/b6/f6e7b6e83f08afc1fdeeab94d15aa4ea.jpg"></a>
+        <a href="https://www.youtube.com/watch?v=UIJWat1rJqc"><img class="imgs"
+                src="https://i.pinimg.com/564x/c7/f9/7c/c7f97c37ca9c9f80075d5809d114e8c1.jpg"></a>
+    </section>
 
+<section><p class="letreiro">TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES</p></section>
+    <section class="linha" id="TATUADORES">
+        <section class="tatuadores">
+            <a href="https://www.youtube.com/watch?v=UIJWat1rJqc"><img
+                src="https://i.imgur.com/heenC5D.png"></a>
+            <section>
+                <h1 class="nometatu"><b><mark>Gabriel Pereira</b></mark></h1>
+                <p>Gabriel Pereira é um tatuador renomado pelo realismo, criando tatuagens <mark>detalhadas e realistas</mark>, com uma habilidade que as torna vívidas na pele.</p>
+            </section>
         </section>
-
+        <section class="tatuadores">
+            <a href="https://www.youtube.com/watch?v=UIJWat1rJqc"><img
+                src="https://i.imgur.com/heenC5D.png"></a>
+            <section>
+                <h1 class="nometatu"><b><mark>Brenno Lucas</b></mark></h1>
+                <p>Brenno Lucas é um tatuador especializado em <mark>tatuagens finas</mark>, reconhecido por suas linhas delicadas e designs elegantes.</p>
+            </section>
         </section>
-    </body>
+        <section class="tatuadores">
+            <a href="https://www.youtube.com/watch?v=UIJWat1rJqc"><img
+                src="https://i.imgur.com/heenC5D.png"></a>
+            <section>
+                <h1 class="nometatu"><b><mark>Luccas Pontes</b></mark></h1>
+                <p>Luccas Pontes é um tatuador especializado em <mark>tatuagens tribais</mark>, conhecido por seus designs intrincados e culturalmente ricos.</p>
+            </section>
+        </section>
+        <section class="tatuadores">
+            <a href="https://www.youtube.com/watch?v=UIJWat1rJqc"><img
+                src="https://i.imgur.com/heenC5D.png"></a>
+            <section>
+                <h1 class="nometatu"><b><mark>Jeová Moreira</b></mark></h1>
+                <p>Jeová Moreira é um tatuador especializado em <mark>tatuagens geek</mark>, celebrando a cultura pop e universos ficcionais favoritos através de sua arte.</p>
+            </section>
+        </section>
+        <section class="tatuadores">
+            <a href="https://www.youtube.com/watch?v=UIJWat1rJqc"><img
+                src="https://i.imgur.com/heenC5D.png"></a>
+            <section>
+                <h1 class="nometatu"><b><mark>Zeus Fontes</b></mark></h1>
+                <p>Zeus Fontes é um tatuador especializado em <mark>blackwork</mark>, criando designs marcantes com predominância do preto.</p>
+            </section>
+        </section>
+    </section>
+<section><p class="letreiro2">TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES</p></section>
+
+    <section class="coluna" id="ESTUDIO">
+        <section class="box1">
+            <a href="https://s0.geograph.org.uk/geophotos/05/78/43/5784317_48c8dd6b.jpg"><img class="imgb" src="https://s0.geograph.org.uk/geophotos/05/78/43/5784317_48c8dd6b.jpg"></a>
+            <a href="https://i.pinimg.com/736x/fe/c8/f7/fec8f754435a1e8f667a19de6a942365.jpg"><img class="imgb2" src="https://i.pinimg.com/736x/fe/c8/f7/fec8f754435a1e8f667a19de6a942365.jpg"></a>
+            <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlJBRxiEeEDAV9NT7E1sKKEvAPFBmn4C4A5A&usqp=CAU"><img class="imgb3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlJBRxiEeEDAV9NT7E1sKKEvAPFBmn4C4A5A&usqp=CAU"></a>
+            <a href="https://www.youtube.com/watch?v=UIJWat1rJqc"><img class="imgb4" src="https://s3-media0.fl.yelpcdn.com/bphoto/uCli5Rj8pzlRMUY5xt7AIQ/l.jpg"></a>
+            
+        </section>
+        <div class="font box2">
+            <h2>Conheça nosso estúdio!</h2>
+            <p class="p1">No coração da cidade, o IncMasters é o destino definitivo para expressão pessoal e maestria artística em tatuagem. 
+                Nossos mestres tatuadores transformam ideias em obras-primas duradouras, com técnicas avançadas e materiais de alta 
+                qualidade. Priorizando segurança e higiene, oferecemos uma experiência única, onde cada tatuagem conta uma história 
+                única.</p>
+            <h3><b>Rua dos Ipês, 456 Bairro Jardim das Estrelas.</b></h3>
+        </div>
+    </section>
+
+    <section id="formulario" class="conteudo box4">
+        <p style="font-size: 20px;">Contato ☎</p>
+        <form method="get" action="Obrigado.html">
+            <label>Digite seu nome:</label><br>
+            <input type="text" name="nome" required><br>
+
+            <label>Digite seu email:</label><br>
+            <input type="email" name="email" required><br>
+            <label>Marque o dia da visita:</label><br>
+            <input type="date" name="marcar dia" required><br>
+            <label>Mensagem:</label><br>
+            <textarea name="mensagem"></textarea><br>
+            <input class="cadas" type="submit" value="Enviar" required><br>
+
+
+            <label></label>
+
+        </form>
+    </section>
+
+</body>
+
 </html>

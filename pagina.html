@@ -11,7 +11,6 @@
         body {
             background-color: rgb(255, 255, 255);
             font-family: courier, arial, helvetica;
-            overflow-x: hidden;
         }
 
         #logo {
@@ -25,6 +24,7 @@
             top: 0px;
             justify-content: space-around;
             display: flex;
+            z-index: 6;
         }
 
         .linksh {
@@ -144,26 +144,44 @@
         }
 
         .imgb{
-            height: 150px;
-            display: inline-block
+            width: 480px;
+            height: 340px;
+            display: inline-block;
+            position: relative; 
+            min-width: 340px;
+            z-index: 1;
         }
-        .mar1{
-            margin-left: 25px;
+        .imgb2{
+            width: 210px;
+            height: 200px;
+            display: inline-block;
+            position: relative;
+            margin-bottom: 140px;
         }
-        .mar2{
-            margin-top: 25px;
+        .imgb3{
+            width: 100px;
+            height: 130px;
+            display: inline-block;
+            margin-left: -219.5px;
+ 
         }
-        .mar3{
-            margin-bottom: 25px;
+        .imgb4{
+            width: 100px;
+            height: 130px;
+            display: inline-block;
         }
+
         .coluna{
-            display: flex;
+            display: inline-flex;
             width: 100%;
             margin-top: 150px;
         }
         .box1{
             background-color: black;
             width: 62%;
+            padding: 3%;
+            padding-left: 5%;
+            
         }
         .box2{
             background-color: black;
@@ -174,14 +192,15 @@
             font-family: 'Courier New', Courier, monospace;
             color: white;
         }
-        h2{
+        .box2 h2{
             background-color: white;
             color: black;
         }
-        h2, .p1, h3{
+        .box2 h2,.box2 p,.box2 h3{
             display: inline-block;
             margin: 17px;
         }
+        
 
     </style>
     <meta charset="utf-8">
@@ -189,21 +208,25 @@
 
 <body>
     <header>
-        <a class="linksh" href="https://www.youtube.com/watch?v=UIJWat1rJqc">ESTÚDIO</a>
-        <a class="linksh" href="https://www.youtube.com/watch?v=UIJWat1rJqc">TATUADORES</a>
+        <a class="linksh" href="#ESTUDIO">ESTÚDIO</a>
+        <a class="linksh" href="#TATUADORES">TATUADORES</a>
 
         <a href="https://www.youtube.com/watch?v=UIJWat1rJqc" target="_blank"><img id="logo" class="center"
                 src="https://i.imgur.com/lLwrB5i.png"></a>
 
+        <a class="linksh" href="#GALERIA">GALERIA</a>
         <a class="linksh" href="https://www.youtube.com/watch?v=UIJWat1rJqc">FALE CONOSCO</a>
-        <a class="linksh" href="https://www.youtube.com/watch?v=UIJWat1rJqc">SOBRE NÓS</a>
 
     </header>
 
 
-    <section class="galeria">
+    <section class="galeria" id="GALERIA">
         <a href="https://www.youtube.com/watch?v=UIJWat1rJqc"><img class="imgs"
                 src="https://i.pinimg.com/564x/f8/d6/fd/f8d6fdf0ef81503649d75f17ed4f491c.jpg"></a>
+        <a href="https://www.youtube.com/watch?v=UIJWat1rJqc"><img class="imgs"
+                src="https://i.pinimg.com/564x/c7/f9/7c/c7f97c37ca9c9f80075d5809d114e8c1.jpg"></a>
+        <a href="https://www.youtube.com/watch?v=UIJWat1rJqc"><img class="imgs"
+                src="https://i.pinimg.com/564x/f6/e7/b6/f6e7b6e83f08afc1fdeeab94d15aa4ea.jpg"></a>
         <a href="https://www.youtube.com/watch?v=UIJWat1rJqc"><img class="imgs"
                 src="https://i.pinimg.com/564x/c7/f9/7c/c7f97c37ca9c9f80075d5809d114e8c1.jpg"></a>
         <a href="https://www.youtube.com/watch?v=UIJWat1rJqc"><img class="imgs"
@@ -213,7 +236,7 @@
     </section>
 
 <section><p class="letreiro">TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES</p></section>
-    <section class="linha">
+    <section class="linha" id="TATUADORES">
         <section class="tatuadores">
             <a href="https://www.youtube.com/watch?v=UIJWat1rJqc"><img
                 src="https://i.imgur.com/heenC5D.png"></a>
@@ -257,21 +280,16 @@
     </section>
 <section><p class="letreiro2">TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES</p></section>
 
-    <section class="coluna">
+    <section class="coluna" id="ESTUDIO">
         <section class="box1">
-            <img class="mar1 mar2 imgb" src="https://s3-media0.fl.yelpcdn.com/bphoto/uCli5Rj8pzlRMUY5xt7AIQ/l.jpg"></img>
-            <img class="mar2 imgb" src="https://i.pinimg.com/originals/be/e5/01/bee50162ff8509e4b63b7c7870d73d64.png"></img>
-            <img class="mar2 imgb" src="https://www.contabilizei.com.br/contabilidade-online/wp-content/uploads/2020/12/estudio-tatoo-studio-scaled.jpg"></img>
-            <img class="mar2 imgb" src="https://5bestincity.com/listimg/India/dewas-mp/Ink-For-All-Tattoo-Studio-Shopping-Tattoo-shops-Dewas-Madhya-Pradesh.jpg"></img>
-            <img class="mar2 imgb" src="https://tattoozstudio.com/wp-content/uploads/2017/06/estudio-02-min.jpg"></img><br>
-            <img class="mar1 mar3 imgb" src="https://tattoozstudio.com/wp-content/uploads/2017/06/estudio-02-min.jpg"></img>
-            <img class="mar3 imgb" src="https://5bestincity.com/listimg/India/dewas-mp/Ink-For-All-Tattoo-Studio-Shopping-Tattoo-shops-Dewas-Madhya-Pradesh.jpg"></img>
-            <img class="mar3 imgb" src="https://www.contabilizei.com.br/contabilidade-online/wp-content/uploads/2020/12/estudio-tatoo-studio-scaled.jpg"></img>
-            <img class="mar3 imgb" src="https://i.pinimg.com/originals/be/e5/01/bee50162ff8509e4b63b7c7870d73d64.png"></img>
-            <img class="mar3 imgb" src="https://s3-media0.fl.yelpcdn.com/bphoto/uCli5Rj8pzlRMUY5xt7AIQ/l.jpg"></img>
+            <a href="https://s0.geograph.org.uk/geophotos/05/78/43/5784317_48c8dd6b.jpg"><img class="imgb" src="https://s0.geograph.org.uk/geophotos/05/78/43/5784317_48c8dd6b.jpg"></a>
+            <a href="https://i.pinimg.com/736x/fe/c8/f7/fec8f754435a1e8f667a19de6a942365.jpg"><img class="imgb2" src="https://i.pinimg.com/736x/fe/c8/f7/fec8f754435a1e8f667a19de6a942365.jpg"></a>
+            <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlJBRxiEeEDAV9NT7E1sKKEvAPFBmn4C4A5A&usqp=CAU"><img class="imgb3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlJBRxiEeEDAV9NT7E1sKKEvAPFBmn4C4A5A&usqp=CAU"></a>
+            <a href="https://www.youtube.com/watch?v=UIJWat1rJqc"><img class="imgb4" src="https://s3-media0.fl.yelpcdn.com/bphoto/uCli5Rj8pzlRMUY5xt7AIQ/l.jpg"></a>
+            
         </section>
         <div class="font box2">
-            <h2 class="tit">Conheça nosso estúdio!</h2>
+            <h2>Conheça nosso estúdio!</h2>
             <p class="p1">No coração da cidade, o IncMasters é o destino definitivo para expressão pessoal e maestria artística em tatuagem. 
                 Nossos mestres tatuadores transformam ideias em obras-primas duradouras, com técnicas avançadas e materiais de alta 
                 qualidade. Priorizando segurança e higiene, oferecemos uma experiência única, onde cada tatuagem conta uma história 

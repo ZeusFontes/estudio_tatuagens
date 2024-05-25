@@ -8,13 +8,295 @@
             box-sizing: border-box;
         }
 
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+
         body {
             background-color: rgb(255, 255, 255);
             font-family: courier, arial, helvetica;
         }
 
+        @import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap");
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            padding: 30px 10px;
+            transition: background .4s ease-in;
+        }
+
+
+        input[type=radio] {
+            display: none;
+        }
+
+        .card {
+            position: absolute;
+            width: 60%;
+            height: 100%;
+            left: 0;
+            right: 0;
+            margin: auto;
+            transition: transform .4s ease;
+            cursor: pointer;
+        }
+
+        .container {
+            transform-style: preserve-3d;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            align-items: center;
+            width: 70%;
+            margin-left: 2%;
+            margin-top: 1%;
+
+
+        }
+
+        .cards {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            margin-bottom: 20px;
+        }
+
+        .cards img {
+            width: 312px;
+            height: 528px;
+            border-radius: 60px;
+            object-fit: cover;
+        }
+
+        #item-1:checked~.cards #song-12,
+        #item-2:checked~.cards #song-1,
+        #item-3:checked~.cards #song-2,
+        #item-4:checked~.cards #song-3,
+        #item-5:checked~.cards #song-4,
+        #item-6:checked~.cards #song-5,
+        #item-7:checked~.cards #song-6,
+        #item-8:checked~.cards #song-7,
+        #item-9:checked~.cards #song-8,
+        #item-10:checked~.cards #song-9,
+        #item-11:checked~.cards #song-10,
+        #item-12:checked~.cards #song-11 {
+            transform: translatex(-40%) scale(1);
+            opacity: .4;
+            z-index: 0;
+        }
+
+        #item-1:checked~.cards #song-1,
+        #item-2:checked~.cards #song-2,
+        #item-3:checked~.cards #song-3,
+        #item-4:checked~.cards #song-4,
+        #item-5:checked~.cards #song-5,
+        #item-6:checked~.cards #song-6 #item-7:checked~.cards #song-7,
+        #item-8:checked~.cards #song-8,
+        #item-9:checked~.cards #song-9,
+        #item-10:checked~.cards #song-10,
+        #item-11:checked~.cards #song-11,
+        #item-12:checked~.cards #song-12 {
+            transform: translatex(0%) scale(1);
+            opacity: 1;
+            z-index: 0;
+        }
+
+        #item-1:checked~.cards #song-2,
+        #item-2:checked~.cards #song-3,
+        #item-3:checked~.cards #song-4,
+        #item-4:checked~.cards #song-5,
+        #item-5:checked~.cards #song-6,
+        #item-6:checked~.cards #song-7,
+        #item-7:checked~.cards #song-8,
+        #item-8:checked~.cards #song-9,
+        #item-9:checked~.cards #song-10,
+        #item-10:checked~.cards #song-11,
+        #item-11:checked~.cards #song-12,
+        #item-12:checked~.cards #song-1 {
+            transform: translatex(40%) scale(1);
+            opacity: 1;
+            z-index: 0;
+        }
+
+        #item-1:checked~.cards #song-3,
+        #item-2:checked~.cards #song-4,
+        #item-3:checked~.cards #song-5,
+        #item-4:checked~.cards #song-6,
+        #item-5:checked~.cards #song-7,
+        #item-6:checked~.cards #song-8,
+        #item-7:checked~.cards #song-9,
+        #item-8:checked~.cards #song-10,
+        #item-9:checked~.cards #song-11,
+        #item-10:checked~.cards #song-12,
+        #item-11:checked~.cards #song-1,
+        #item-12:checked~.cards #song-2 {
+            transform: translatex(80%) scale(1);
+            opacity: 1;
+            z-index: 0;
+        }
+
+        #item-1:checked~.cards #song-4,
+        #item-2:checked~.cards #song-5,
+        #item-3:checked~.cards #song-6,
+        #item-4:checked~.cards #song-7,
+        #item-5:checked~.cards #song-8,
+        #item-6:checked~.cards #song-9,
+        #item-7:checked~.cards #song-10,
+        #item-8:checked~.cards #song-11,
+        #item-9:checked~.cards #song-12,
+        #item-10:checked~.cards #song-1,
+        #item-11:checked~.cards #song-2,
+        #item-12:checked~.cards #song-3 {
+            transform: translatex(120%) scale(1);
+            opacity: 1;
+            z-index: 0;
+        }
+
+        #item-1:checked~.cards #song-5,
+        #item-2:checked~.cards #song-6,
+        #item-3:checked~.cards #song-7,
+        #item-4:checked~.cards #song-8,
+        #item-5:checked~.cards #song-9,
+        #item-6:checked~.cards #song-10,
+        #item-7:checked~.cards #song-11,
+        #item-8:checked~.cards #song-12,
+        #item-9:checked~.cards #song-1,
+        #item-10:checked~.cards #song-2,
+        #item-11:checked~.cards #song-3,
+        #item-12:checked~.cards #song-4 {
+            transform: translatex(160%) scale(1);
+            opacity: .4;
+            z-index: 0;
+        }
+
+        #item-1:checked~.cards #song-6,
+        #item-2:checked~.cards #song-7,
+        #item-3:checked~.cards #song-8,
+        #item-4:checked~.cards #song-9,
+        #item-5:checked~.cards #song-10,
+        #item-6:checked~.cards #song-11,
+        #item-7:checked~.cards #song-12,
+        #item-8:checked~.cards #song-1,
+        #item-9:checked~.cards #song-2,
+        #item-10:checked~.cards #song-3,
+        #item-11:checked~.cards #song-4,
+        #item-12:checked~.cards #song-5 {
+            transform: translatex(0%) scale(0);
+            opacity: 0;
+            z-index: 0;
+        }
+
+        #item-1:checked~.cards #song-7,
+        #item-2:checked~.cards #song-8,
+        #item-3:checked~.cards #song-9,
+        #item-4:checked~.cards #song-10,
+        #item-5:checked~.cards #song-11,
+        #item-6:checked~.cards #song-12,
+        #item-7:checked~.cards #song-1,
+        #item-8:checked~.cards #song-2,
+        #item-9:checked~.cards #song-3,
+        #item-10:checked~.cards #song-4,
+        #item-11:checked~.cards #song-5,
+        #item-12:checked~.cards #song-6 {
+            transform: translatex(0%) scale(0);
+            opacity: 0;
+            z-index: 0;
+        }
+
+        #item-1:checked~.cards #song-8,
+        #item-2:checked~.cards #song-9,
+        #item-3:checked~.cards #song-10,
+        #item-4:checked~.cards #song-11,
+        #item-5:checked~.cards #song-12,
+        #item-6:checked~.cards #song-1,
+        #item-7:checked~.cards #song-2,
+        #item-8:checked~.cards #song-3,
+        #item-9:checked~.cards #song-4,
+        #item-10:checked~.cards #song-5,
+        #item-11:checked~.cards #song-6,
+        #item-12:checked~.cards #song-7 {
+            transform: translatex(0%) scale(0);
+            opacity: 0;
+            z-index: 0;
+        }
+
+        #item-1:checked~.cards #song-9,
+        #item-2:checked~.cards #song-10,
+        #item-3:checked~.cards #song-11,
+        #item-4:checked~.cards #song-12,
+        #item-5:checked~.cards #song-1,
+        #item-6:checked~.cards #song-2,
+        #item-7:checked~.cards #song-3,
+        #item-8:checked~.cards #song-4,
+        #item-9:checked~.cards #song-5,
+        #item-10:checked~.cards #song-6,
+        #item-11:checked~.cards #song-7,
+        #item-12:checked~.cards #song-8 {
+            transform: translatex(0%) scale(0);
+            opacity: 0;
+            z-index: 0;
+        }
+
+        #item-1:checked~.cards #song-10,
+        #item-2:checked~.cards #song-11,
+        #item-3:checked~.cards #song-12,
+        #item-4:checked~.cards #song-1,
+        #item-5:checked~.cards #song-2,
+        #item-6:checked~.cards #song-3,
+        #item-7:checked~.cards #song-4,
+        #item-8:checked~.cards #song-5,
+        #item-9:checked~.cards #song-6,
+        #item-10:checked~.cards #song-7,
+        #item-11:checked~.cards #song-8,
+        #item-12:checked~.cards #song-9 {
+            transform: translatex(0%) scale(0);
+            opacity: 0;
+            z-index: 0;
+
+        }
+
+        #item-1:checked~.cards #song-11,
+        #item-2:checked~.cards #song-12,
+        #item-3:checked~.cards #song-1,
+        #item-4:checked~.cards #song-2,
+        #item-5:checked~.cards #song-3,
+        #item-6:checked~.cards #song-4,
+        #item-7:checked~.cards #song-5,
+        #item-8:checked~.cards #song-6,
+        #item-9:checked~.cards #song-7,
+        #item-10:checked~.cards #song-8,
+        #item-11:checked~.cards #song-9,
+        #item-12:checked~.cards #song-10 {
+            transform: translatex(0%) scale(0);
+            opacity: 0;
+            z-index: 0;
+
+
+
+            .container img {
+                box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+            }
+        }
+
+
+
+
+
         #logo {
-            width: 120px;
+            max-width: 100px;
+            margin-top: -3%;
         }
 
         header {
@@ -25,12 +307,14 @@
             justify-content: space-around;
             display: flex;
             z-index: 6;
+            height: 8%;
+            margin-top: -1.8%;
         }
 
         .linksh {
             color: black;
-            margin-top: 2.8%;
-            margin-bottom: 2%;
+            margin-top: 1.6%;
+            margin-bottom: 1.5%;
         }
 
         .linksh:hover {
@@ -75,7 +359,8 @@
             background-color: rgb(29, 29, 29);
             color: white;
         }
-        .tatuadores{
+
+        .tatuadores {
             background-color: black;
             width: 20%;
             border-style: solid;
@@ -84,21 +369,24 @@
             display: flex;
             max-height: 245px;
         }
-        .tatuadores section{
+
+        .tatuadores section {
             width: 100%;
             height: 100%;
             padding: 5%;
         }
-        .tatuadores h1{
+
+        .tatuadores h1 {
             color: black;
             width: 450%;
             max-height: 245px;
             word-break: break-word;
-            margin-bottom:6% ;
+            margin-bottom: 6%;
             display: inline-block;
 
         }
-        .tatuadores p{
+
+        .tatuadores p {
 
             color: white;
             margin-top: 30%;
@@ -106,19 +394,25 @@
             word-break: break-word;
             font-size: clamp(12px, 1vw, 14px);
         }
-        .tatuadores img{
-            max-width:150px;
+
+        .tatuadores img {
+            max-width: 150px;
             will-change: 20%;
             margin-top: 2%;
             max-height: 100%;
         }
-        mark{
+
+        mark {
             background-color: white;
         }
-        .linha{
+
+        .linha {
             display: flex;
+            margin-top: 500px;
         }
-        .letreiro{
+
+        .letreiro {
+            margin-top: 500px;
             background-color: black;
             color: white;
             white-space: nowrap;
@@ -130,7 +424,9 @@
             border-color: rgb(255, 255, 255);
             border-width: 5px;
         }
-        .letreiro2{
+
+        .letreiro2 {
+            margin-top: -20px;
             background-color: black;
             color: white;
             white-space: nowrap;
@@ -143,65 +439,160 @@
             border-width: 5px;
         }
 
-        .imgb{
+        .imgb {
             width: 480px;
             height: 340px;
             display: inline-block;
-            position: relative; 
+            position: relative;
             min-width: 340px;
             z-index: 1;
         }
-        .imgb2{
-            width: 210px;
+
+        .imgb2 {
+            width: 400px;
             height: 200px;
             display: inline-block;
             position: relative;
             margin-bottom: 140px;
         }
-        .imgb3{
-            width: 100px;
+
+        .imgb3 {
+            width: 195px;
             height: 130px;
             display: inline-block;
-            margin-left: -219.5px;
- 
+            margin-left: -409px;
+
         }
-        .imgb4{
-            width: 100px;
+
+        .imgb4 {
+            width: 195px;
             height: 130px;
             display: inline-block;
         }
 
-        .coluna{
+        .coluna {
             display: inline-flex;
             width: 100%;
             margin-top: 150px;
         }
-        .box1{
+
+        .box1 {
             background-color: black;
             width: 62%;
             padding: 3%;
             padding-left: 5%;
-            
+
         }
-        .box2{
-            background-color: black;
+
+        .box2 {
+            background-color: rgb(0, 0, 0);
             width: 38%;
             padding: 20px;
+            margin-left: -3%;
         }
-        .font{
+
+        .backestudi {
+            width: 100%;
+            background-color: rgb(29, 29, 29);
+
+        }
+        
+        .backestudi2 {
+            width: 100%;
+            background-color: rgb(0, 0, 0);
+
+        }
+
+        .font {
             font-family: 'Courier New', Courier, monospace;
             color: white;
         }
-        .box2 h2{
+
+        .box2 h2 {
             background-color: white;
             color: black;
         }
-        .box2 h2,.box2 p,.box2 h3{
+
+        .box2 h2,
+        .box2 p,
+        .box2 h3 {
             display: inline-block;
             margin: 17px;
         }
-        
 
+
+
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+
+        .column {
+            float: left;
+            width: 15%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+        }
+
+        @media screen and (max-width: 650px) {
+            .column {
+                width: 100%;
+                display: block;
+                max-height: 20%;
+            }
+        }
+
+        .card2 {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .card2 img {
+        }
+
+        .container2 {
+            padding: 0 16px;
+            font-size: 15px;
+            background-color: black;
+
+        }
+
+        .container2 p {
+            padding: 2%;
+            color: white;
+        }
+
+        .container2 h2 {
+            padding: 3%;
+            color: white;
+        }
+
+        .container2::after,
+        .row::after {
+            content: "";
+            clear: both;
+            display: flex;
+        }
+
+        .title {
+            color: grey;
+        }
+
+        .button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: black;
+            background-color: white;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .button:hover {
+            background-color: black;
+            color: white;
+        }
     </style>
     <meta charset="utf-8">
 </head>
@@ -215,85 +606,175 @@
                 src="https://i.imgur.com/lLwrB5i.png"></a>
 
         <a class="linksh" href="#GALERIA">GALERIA</a>
-        <a class="linksh" href="https://www.youtube.com/watch?v=UIJWat1rJqc">FALE CONOSCO</a>
+        <a class="linksh" href="">FALE_CONOSCO</a>
 
     </header>
 
 
-    <section class="galeria" id="GALERIA">
-        <a href="https://www.youtube.com/watch?v=UIJWat1rJqc"><img class="imgs"
-                src="https://i.pinimg.com/564x/f8/d6/fd/f8d6fdf0ef81503649d75f17ed4f491c.jpg"></a>
-        <a href="https://www.youtube.com/watch?v=UIJWat1rJqc"><img class="imgs"
-                src="https://i.pinimg.com/564x/c7/f9/7c/c7f97c37ca9c9f80075d5809d114e8c1.jpg"></a>
-        <a href="https://www.youtube.com/watch?v=UIJWat1rJqc"><img class="imgs"
-                src="https://i.pinimg.com/564x/f6/e7/b6/f6e7b6e83f08afc1fdeeab94d15aa4ea.jpg"></a>
-        <a href="https://www.youtube.com/watch?v=UIJWat1rJqc"><img class="imgs"
-                src="https://i.pinimg.com/564x/c7/f9/7c/c7f97c37ca9c9f80075d5809d114e8c1.jpg"></a>
-        <a href="https://www.youtube.com/watch?v=UIJWat1rJqc"><img class="imgs"
-                src="https://i.pinimg.com/564x/f6/e7/b6/f6e7b6e83f08afc1fdeeab94d15aa4ea.jpg"></a>
-        <a href="https://www.youtube.com/watch?v=UIJWat1rJqc"><img class="imgs"
-                src="https://i.pinimg.com/564x/c7/f9/7c/c7f97c37ca9c9f80075d5809d114e8c1.jpg"></a>
+
+    <div class="container" id="GALERIA">
+        <input type="radio" name="slider" id="item-1" checked>
+        <input type="radio" name="slider" id="item-2">
+        <input type="radio" name="slider" id="item-3">
+        <input type="radio" name="slider" id="item-4">
+        <input type="radio" name="slider" id="item-5">
+        <input type="radio" name="slider" id="item-6">
+        <input type="radio" name="slider" id="item-7">
+        <input type="radio" name="slider" id="item-8">
+        <input type="radio" name="slider" id="item-9">
+        <input type="radio" name="slider" id="item-10">
+        <input type="radio" name="slider" id="item-11">
+        <input type="radio" name="slider" id="item-12">
+        <div class="cards">
+            <label class="card" for="item-1" id="song-1">
+                <img src="assets/BW1.png" alt="song">
+            </label>
+            <label class="card" for="item-2" id="song-2">
+                <img src="assets/REALISTA3.png" alt="song">
+            </label>
+            <label class="card" for="item-3" id="song-3">
+                <img src="assets/TRIBAL2.png" alt="song">
+            </label>
+            <label class="card" for="item-4" id="song-4">
+                <img src="assets/GEEK3.png" alt="song">
+            </label>
+            <label class="card" for="item-5" id="song-5">
+                <img src="assets/FINA3.png" alt="song">
+            </label>
+            <label class="card" for="item-6" id="song-6">
+                <img src="assets/BW3.png" alt="song">
+            </label>
+
+            <label class="card" for="item-7" id="song-7">
+                <img src="assets/REALISTA1.png" alt="song">
+            </label>
+            <label class="card" for="item-8" id="song-8">
+                <img src="assets/TRIBAL1.png" alt="song">
+            </label>
+            <label class="card" for="item-9" id="song-9">
+                <img src="assets/GEEK1.png" alt="song">
+            </label>
+            <label class="card" for="item-10" id="song-10">
+                <img src="assets/FINA1.png" alt="song">
+            </label>
+            <label class="card" for="item-11" id="song-11">
+                <img src="assets/BW2.png" alt="song">
+            </label>
+            <label class="card" for="item-12" id="song-12">
+                <img src="assets/REALISTA2.png" alt="song">
+            </label>
+
+        </div>
+    </div>
+
+
+
+
+
+    <!-- 
+        <section class="galeria" id="GALERIA">
+            <a href="https://www.youtube.com/watch?v=UIJWat1rJqc"><img class="imgs"
+                    src="https://i.pinimg.com/564x/f8/d6/fd/f8d6fdf0ef81503649d75f17ed4f491c.jpg"></a>
+            <a href="https://www.youtube.com/watch?v=UIJWat1rJqc"><img class="imgs"
+                    src="https://i.pinimg.com/564x/c7/f9/7c/c7f97c37ca9c9f80075d5809d114e8c1.jpg"></a>
+            <a href="https://www.youtube.com/watch?v=UIJWat1rJqc"><img class="imgs"
+                    src="https://i.pinimg.com/564x/f6/e7/b6/f6e7b6e83f08afc1fdeeab94d15aa4ea.jpg"></a>
+            <a href="https://www.youtube.com/watch?v=UIJWat1rJqc"><img class="imgs"
+                    src="https://i.pinimg.com/564x/c7/f9/7c/c7f97c37ca9c9f80075d5809d114e8c1.jpg"></a>
+            <a href="https://www.youtube.com/watch?v=UIJWat1rJqc"><img class="imgs"
+                    src="https://i.pinimg.com/564x/f6/e7/b6/f6e7b6e83f08afc1fdeeab94d15aa4ea.jpg"></a>
+            <a href="https://www.youtube.com/watch?v=UIJWat1rJqc"><img class="imgs"
+                    src="https://i.pinimg.com/564x/c7/f9/7c/c7f97c37ca9c9f80075d5809d114e8c1.jpg"></a>
+        </section>
+ -->
+    <section class="backestudi">
+        </section>
+        <section class="linha" id="TATUADORES">
+            <div class="row">
+                <div class="column">
+                    <div class="card2">
+                        <img src="assets/ho.PNG" alt="HO" style="width:100%">
+                        <div class="container2">
+                            <h2>Gabriel Pereira</h2>
+                            <p class="title">Tatuador</p>
+                            <p>Gabriel Pereira é um tatuador especializado em tatuagens realistas</p>
+                            <p><i>Instagram: @GabrielHo</i></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card2">
+                        <img src="assets/brenno.png" alt="BRENNO" style="width:100%">
+                        <div class="container2">
+                            <h2>Brenno Lucas</h2>
+                            <p class="title">Tatuador</p>
+                            <p>Brenno Lucas é um tatuador especializado em tatuagens finas.</p>
+                            <p><i>Instagram: @BrennoJF</i></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card2">
+                        <img src="assets/luccas.png" alt="LUCCAS" style="width:100%">
+                        <div class="container2">
+                            <h2>Luccas Pontes</h2>
+                            <p class="title">Tatuador</p>
+                            <p>Luccas Pontes é um tatuador especializado em tatuagens tribais</p>
+                            <p><i>Instagram: @luccasP</i></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card2">
+                        <img src="assets/jeova.png" alt="JEOVA" style="width:100%">
+                        <div class="container2">
+                            <h2>Jeová Moreira</h2>
+                            <p class="title">Tatuador</p>
+                            <p>Jeová Moreira é um tatuador especializado em tatuagens geek.</p>
+                            <p><i>Instagram: @Jeovastico</i></p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="column">
+                    <div class="card2">
+                        <img src="assets/zeus.png" alt="ZEUS" style="width:100%">
+                        <div class="container2">
+                            <h2>Zeus Fontes</h2>
+                            <p class="title">Tatuador</p>
+                            <p>Zeus Fontes é um tatuador especializado em tatuagens oldschool.</p>
+                            <p><i>Instagram: @fonteszeus</i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </section>
 
-<section><p class="letreiro">TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES</p></section>
-    <section class="linha" id="TATUADORES">
-        <section class="tatuadores">
-            <a href="https://www.youtube.com/watch?v=UIJWat1rJqc"><img
-                src="https://i.imgur.com/heenC5D.png"></a>
-            <section>
-                <h1 class="nometatu"><b><mark>Gabriel Pereira</b></mark></h1>
-                <p>Gabriel Pereira é um tatuador renomado pelo realismo, criando tatuagens <mark>detalhadas e realistas</mark>, com uma habilidade que as torna vívidas na pele.</p>
-            </section>
-        </section>
-        <section class="tatuadores">
-            <a href="https://www.youtube.com/watch?v=UIJWat1rJqc"><img
-                src="https://i.imgur.com/heenC5D.png"></a>
-            <section>
-                <h1 class="nometatu"><b><mark>Brenno Lucas</b></mark></h1>
-                <p>Brenno Lucas é um tatuador especializado em <mark>tatuagens finas</mark>, reconhecido por suas linhas delicadas e designs elegantes.</p>
-            </section>
-        </section>
-        <section class="tatuadores">
-            <a href="https://www.youtube.com/watch?v=UIJWat1rJqc"><img
-                src="https://i.imgur.com/heenC5D.png"></a>
-            <section>
-                <h1 class="nometatu"><b><mark>Luccas Pontes</b></mark></h1>
-                <p>Luccas Pontes é um tatuador especializado em <mark>tatuagens tribais</mark>, conhecido por seus designs intrincados e culturalmente ricos.</p>
-            </section>
-        </section>
-        <section class="tatuadores">
-            <a href="https://www.youtube.com/watch?v=UIJWat1rJqc"><img
-                src="https://i.imgur.com/heenC5D.png"></a>
-            <section>
-                <h1 class="nometatu"><b><mark>Jeová Moreira</b></mark></h1>
-                <p>Jeová Moreira é um tatuador especializado em <mark>tatuagens geek</mark>, celebrando a cultura pop e universos ficcionais favoritos através de sua arte.</p>
-            </section>
-        </section>
-        <section class="tatuadores">
-            <a href="https://www.youtube.com/watch?v=UIJWat1rJqc"><img
-                src="https://i.imgur.com/heenC5D.png"></a>
-            <section>
-                <h1 class="nometatu"><b><mark>Zeus Fontes</b></mark></h1>
-                <p>Zeus Fontes é um tatuador especializado em <mark>blackwork</mark>, criando designs marcantes com predominância do preto.</p>
-            </section>
-        </section>
-    </section>
-<section><p class="letreiro2">TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES-TATUADORES</p></section>
+    <img src="assets/divisória.png" style="width: 100%; margin-top: 500px;">
 
-    <section class="coluna" id="ESTUDIO">
+
+    <section class="coluna backestudi2" id="ESTUDIO">
         <section class="box1">
-            <a href="https://s0.geograph.org.uk/geophotos/05/78/43/5784317_48c8dd6b.jpg"><img class="imgb" src="https://s0.geograph.org.uk/geophotos/05/78/43/5784317_48c8dd6b.jpg"></a>
-            <a href="https://i.pinimg.com/736x/fe/c8/f7/fec8f754435a1e8f667a19de6a942365.jpg"><img class="imgb2" src="https://i.pinimg.com/736x/fe/c8/f7/fec8f754435a1e8f667a19de6a942365.jpg"></a>
-            <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlJBRxiEeEDAV9NT7E1sKKEvAPFBmn4C4A5A&usqp=CAU"><img class="imgb3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlJBRxiEeEDAV9NT7E1sKKEvAPFBmn4C4A5A&usqp=CAU"></a>
-            <a href="https://www.youtube.com/watch?v=UIJWat1rJqc"><img class="imgb4" src="https://s3-media0.fl.yelpcdn.com/bphoto/uCli5Rj8pzlRMUY5xt7AIQ/l.jpg"></a>
-            
+            <a href="https://s0.geograph.org.uk/geophotos/05/78/43/5784317_48c8dd6b.jpg"><img class="imgb"
+                    src="https://s0.geograph.org.uk/geophotos/05/78/43/5784317_48c8dd6b.jpg"></a>
+            <a href="https://i.pinimg.com/736x/fe/c8/f7/fec8f754435a1e8f667a19de6a942365.jpg"><img class="imgb2"
+                    src="https://i.pinimg.com/736x/fe/c8/f7/fec8f754435a1e8f667a19de6a942365.jpg"></a>
+            <a
+                href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlJBRxiEeEDAV9NT7E1sKKEvAPFBmn4C4A5A&usqp=CAU"><img
+                    class="imgb3"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlJBRxiEeEDAV9NT7E1sKKEvAPFBmn4C4A5A&usqp=CAU"></a>
+            <a href="https://www.youtube.com/watch?v=UIJWat1rJqc"><img class="imgb4"
+                    src="https://s3-media0.fl.yelpcdn.com/bphoto/uCli5Rj8pzlRMUY5xt7AIQ/l.jpg"></a>
+
         </section>
-        <div class="font box2">
-            <h2>Conheça nosso estúdio!</h2>
-            <p class="p1">No coração da cidade, o IncMasters é o destino definitivo para expressão pessoal e maestria artística em tatuagem. 
-                Nossos mestres tatuadores transformam ideias em obras-primas duradouras, com técnicas avançadas e materiais de alta 
-                qualidade. Priorizando segurança e higiene, oferecemos uma experiência única, onde cada tatuagem conta uma história 
-                única.</p>
+        <div class="font box2 ">
+            <h2>Sobre nós!</h2>
+            <p class="p1">&nbsp&nbsp&nbsp&nbsp&nbspLocalizado no coração da cidade, o Inkmasters é mais do que apenas um estúdio de tatuagem – é um santuário para a expressão artística e a criatividade. Fundado por artistas dedicados com anos de experiência, nosso objetivo é transformar suas ideias e sonhos em obras de arte permanentes na pele.<br> &nbsp&nbsp&nbsp&nbsp&nbspNossa missão é oferecer um serviço excepcional, garantindo que cada cliente saia do nosso estúdio com uma tatuagem que ame e se orgulhe de exibir. Acreditamos que cada tatuagem conta uma história única e é uma extensão da personalidade de quem a possui. Por isso, trabalhamos incansavelmente para proporcionar uma experiência personalizada e inesquecível.</p>
             <h3><b>Rua dos Ipês, 456 Bairro Jardim das Estrelas.</b></h3>
         </div>
     </section>

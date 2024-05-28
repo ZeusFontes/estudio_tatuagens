@@ -386,19 +386,15 @@ header {
     background-color: white;
     box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
     width: 1178px;
-    height: 450px;
+    height: 550px;
     margin-top: 2.3%; 
 }
 .box5 p{
     font-size: 50px;
     padding: 2%;
+    margin-bottom: 3%;
 }
-.box5 img{
-    width: 500px;
-    margin-top: -2%;
-    margin-left: 60%;
 
-}
 .inputbox{
     width: 90%; 
     padding: 5px;
@@ -592,20 +588,38 @@ mark {
 }
 footer{
     display: flex;
+    
 }
 .inputvazio{
     display: none;
 }
 .insta{
     display: flex;
+    margin-left: 15px;
+    
 }
 .insta img{
-    width: 50px;
+    width: 45px;
     margin-top: 1%;
     margin-left: 20px;
 }
-.insta h1{
+.insta a{
     font-size: 30px;
-    margin-top: 20px;
-    mar
+    margin-top: -6px;
+    color: black;
+    text-decoration:none;
+    margin-bottom: 3%;
+}
+.insta h1{
+    margin-left: 5px;
+    font-size: 40px;  
+}
+.insta a{
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+}
+.sataninho{
+    z-index: -9;
+    width: 500px;
+    margin-top: -28%;
+    margin-left: 700px;
 }

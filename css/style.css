@@ -384,8 +384,11 @@ header {
     box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
     width: 1178px;
     height: 450px;
-    margin-top: 2.3%;
-    
+    margin-top: 2.3%; 
+}
+.box5 p{
+    font-size: 50px;
+    padding: 2%;
 }
 .box4 input {
     font-family: courier, arial, helvetica;

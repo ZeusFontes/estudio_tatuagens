@@ -11,12 +11,12 @@
 
 <body>
     <header>
-        <a class="linksh" href="#ESTUDIO">ESTÚDIO</a>
+        <a class="linksh" href="#GALERIA">GALERIA</a>
         <a class="linksh" href="#TATUADORES">TATUADORES</a>
 
         <img id="logo" class="center" src="assets/Logo.png">
 
-        <a class="linksh" href="#GALERIA">GALERIA</a>
+        <a class="linksh" href="#ESTUDIO">ESTÚDIO</a>
         <a class="linksh" href="#FALE">FALE CONOSCO</a>
 
     </header>
@@ -24,18 +24,18 @@
     <main>
 
         <div class="container">
-            <input type="radio" name="slider" id="item-1" checked>
-            <input type="radio" name="slider" id="item-2">
-            <input type="radio" name="slider" id="item-3">
-            <input type="radio" name="slider" id="item-4">
-            <input type="radio" name="slider" id="item-5">
-            <input type="radio" name="slider" id="item-6">
-            <input type="radio" name="slider" id="item-7">
-            <input type="radio" name="slider" id="item-8">
-            <input type="radio" name="slider" id="item-9">
-            <input type="radio" name="slider" id="item-10">
-            <input type="radio" name="slider" id="item-11">
-            <input type="radio" name="slider" id="item-12">
+            <input class="carroselradio" type="radio" name="slider" id="item-1" checked>
+            <input class="carroselradio" type="radio" name="slider" id="item-2">
+            <input class="carroselradio" type="radio" name="slider" id="item-3">
+            <input class="carroselradio" type="radio" name="slider" id="item-4">
+            <input class="carroselradio" type="radio" name="slider" id="item-5">
+            <input class="carroselradio" type="radio" name="slider" id="item-6">
+            <input class="carroselradio" type="radio" name="slider" id="item-7">
+            <input class="carroselradio" type="radio" name="slider" id="item-8">
+            <input class="carroselradio" type="radio" name="slider" id="item-9">
+            <input class="carroselradio" type="radio" name="slider" id="item-10">
+            <input class="carroselradio" type="radio" name="slider" id="item-11">
+            <input class="carroselradio" type="radio" name="slider" id="item-12">
             <div class="cards">
                 <label class="card" for="item-1" id="song-1">
                     <img src="assets/BW1.png" alt="song">
@@ -208,32 +208,69 @@
 
 
         <section class="fale">
-            <h1><i>FALE CONOSCO!</i></h1>
+            <h1><i>FAÇA SEU AGENDAMENTO</i></h1>
         </section>
         <footer>
             <section class="conteudo box4">
                 <br>
-                <p><mark>MANDE UM EMAIL</mark></p><br>
+                <p><mark>AGENDE PELO SITE</mark></p><br>
                 <form method="get" action="Obrigado.html">
                     <label>Digite seu nome:</label><br>
-                    <input type="text" name="nome" required><br>
+                    <input class="inputbox" type="text" name="nome" required><br><br>
 
-                    <label>Digite seu email:</label><br>
-                    <input type="email" name="email" required><br>
-                    <label>Marque o dia da visita:</label><br>
-                    <input type="date" name="marcar dia" required><br>
+                    <label>Digite seu número para contato:</label><br>
+                    <input class="inputbox" type="tel" placeholder="(83)91234-5678" name="numero" required><br><br>
+
+                    <label for="birthdaytime">Marque o dia e horário da sessão:</label><br>
+                    <input class="inputbox" type="datetime-local" id="diaagend" name="diaagend" min="2024-05-29 00:00" max="2024-05-31 00:00" ><br><br>
+
                     <label>Mensagem:</label><br>
-                    <textarea name="mensagem"></textarea><br>
-                    <input class="cadas" type="submit" value="Enviar" required><br>
+                    <textarea class="inputbox" placeholder="Escreva sua mensagem aqui" name="mensagem"></textarea><br><br>
 
+                    <label>Tatuador:</label><br>
+                    <select class="inputbox" name="assunto"required>
+                      <option value="brenno">Brenno Lucas (Tatuagens Delicadas)</option>
+                      <option value="ho">Gabriel Pereira (Tatuagens Realistas)</option>
+                      <option value="jeova">Jeová Moreira (Tatuagens Geeks)</option>
+                      <option value="luccas">Luccas Pontes (Tatuagens Tribais)</option>
+                      <option value="zeus">Zeus Fontes (Tatuagens BlackWork)</option>
+                      <option value="indefinido" selected>Ainda não decidi</option>
+                    </select><br><br>
 
-                    <label></label>
+                    <label for="myfile">Mande uma referencia! <i>(opcional)</i>:</label><br>
+                    <input class=" ref inputbox" type="file" id="ref" name="ref"><br><br>
+
+                    <label for="html">Escolha a cor da tatuagem: </label><br>
+                    <input type="radio" id="B/W" name="cor" value="B/W">
+                    <label for="html">Preta e branca</label><br>
+                    
+                    
+                    <input type="radio" id="VERMELHA" name="cor" value="VERMELHA">
+                    <label for="css">Vermelha</label><br>
+                    
+                    
+                    <input type="radio" id="COLORIDA" name="cor" value="COLORIDA">
+                    <label for="javascript">Colorida</label><br>
+
+                    <input type="radio" id="indefinido" name="cor" value="indefinido">
+                    <label for="javascript">Ainda não sei</label><br>
+                    
+                    
+
+                    <input class="cadas inputbox" type="submit" value="Enviar" required><br>
 
                 </form>
             </section>
 
             <section class="box5">
-                <p> Faça seu agendamento!</p>
+                <p>AGENDE PELO INSTAGRAM!</p>
+                <div class="insta">
+                    <img src="assets/instalogo.svg">
+                    <h1>@PEIXEESPADALAELE</h1>
+                </div>
+
+
+                </form>
                 <img src="assets/demonine2.png">
             </section>
         </footer>

@@ -3,6 +3,8 @@
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    scrollbar-color: white black;
+    font-family: courier, arial, helvetica;
 }
 
 @import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap");
@@ -12,18 +14,20 @@ main {
     margin: auto;
     width: 100%;
     background: white;
-
+    
 }
+
 
 body {
 
     transition: background .4s ease-in;
-    background-color: black;
-    font-family: courier, arial, helvetica;
+    background-image: repeating-linear-gradient(90deg, rgba(102,102,102, 0.09) 0px, rgba(102,102,102, 0.09) 1px,transparent 1px, transparent 60px),repeating-linear-gradient(0deg, rgba(102,102,102, 0.09) 0px, rgba(102,102,102, 0.09) 1px,transparent 1px, transparent 60px),repeating-linear-gradient(0deg, rgba(102,102,102, 0.09) 0px, rgba(102,102,102, 0.09) 1px,transparent 1px, transparent 10px),repeating-linear-gradient(90deg, rgba(102,102,102, 0.09) 0px, rgba(102,102,102, 0.09) 1px,transparent 1px, transparent 10px),linear-gradient(90deg, rgb(0,0,0),rgb(0,0,0));
+    
+
 }
 
 
-input[type=radio] {
+.carroselradio{
     display: none;
 }
 
@@ -365,20 +369,19 @@ header {
 .box4 {
     padding: 10px;
     width: 500px;
-    height: 500px;
+    height: 650px;
     color: rgb(255, 255, 255);
     min-height: 50;
-    background-color: black;
-    margin-top: 4%;
+    background-color: rgb(0, 0, 0);
+    margin-top: 4%; 
     margin: 40px;
-    padding-bottom: 10% ;
+    padding-bottom: 10%;
     margin-bottom: -1%;
 }
 .box4 p{
     font-size: 40px;
-
-
 }
+
 .box5{
     background-color: white;
     box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
@@ -396,11 +399,10 @@ header {
     margin-left: 60%;
 
 }
-.box4 input {
-    font-family: courier, arial, helvetica;
-    width: 90%;
+.inputbox{
+    width: 90%; 
+    padding: 5px;
 }
-
 .cadas {
     margin-top: 10px;
     padding: 1%;
@@ -590,4 +592,20 @@ mark {
 }
 footer{
     display: flex;
+}
+.inputvazio{
+    display: none;
+}
+.insta{
+    display: flex;
+}
+.insta img{
+    width: 50px;
+    margin-top: 1%;
+    margin-left: 20px;
+}
+.insta h1{
+    font-size: 30px;
+    margin-top: 20px;
+    mar
 }

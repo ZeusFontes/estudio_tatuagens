@@ -97,7 +97,7 @@
                 <section>
                     <h1 class="nometatu"><b><mark>Gabriel Pereira</b></mark></h1>
                     <p>Gabriel Pereira é um tatuador renomado pelo realismo, criando tatuagens <mark>detalhadas e
-                            realistas</mark>, com uma habilidade que as torna vívidas na pele.</p>
+                            Realistas</mark>, com uma habilidade que as torna vívidas na pele.</p>
                 </section>
             </section>
 
@@ -112,7 +112,7 @@
                 </div>
                 <section>
                     <h1 class="nometatu"><b><mark>Brenno Lucas</b></mark></h1>
-                    <p>Brenno Lucas é um tatuador especializado em <mark>tatuagens finas</mark>, reconhecido por suas
+                    <p>Brenno Lucas é um tatuador especializado em <mark>tatuagens Finas</mark>, reconhecido por suas
                         linhas delicadas e designs elegantes.</p>
                 </section>
             </section>
@@ -128,7 +128,7 @@
                 </div>
                 <section>
                     <h1 class="nometatu"><b><mark>Luccas Pontes</b></mark></h1>
-                    <p>Luccas Pontes é um tatuador especializado em <mark>tatuagens tribais</mark>, conhecido por seus
+                    <p>Luccas Pontes é um tatuador especializado em <mark>tatuagens Tribais</mark>, conhecido por seus
                         designs intrincados e culturalmente ricos.</p>
                 </section>
             </section>
@@ -144,7 +144,7 @@
                 </div>
                 <section>
                     <h1 class="nometatu"><b><mark>Jeová Moreira</b></mark></h1>
-                    <p>Jeová Moreira é um tatuador especializado em <mark>tatuagens geek</mark>, celebrando a cultura
+                    <p>Jeová Moreira é um tatuador especializado em <mark>tatuagens Geek</mark>, celebrando a cultura
                         pop e universos ficcionais favoritos através de sua arte.</p>
                 </section>
             </section>
@@ -160,7 +160,7 @@
                 </div>
                 <section>
                     <h1 class="nometatu"><b><mark>Zeus Fontes</b></mark></h1>
-                    <p>Zeus Fontes é um tatuador especializado em <mark>tatuagens oldschool</mark>, criando designs
+                    <p>Zeus Fontes é um tatuador especializado em <mark>tatuagens BlackWork</mark>, criando designs
                         marcantes com
                         predominância do preto.</p>
                 </section>
@@ -180,11 +180,88 @@
         <div id="ESTUDIO"></div>
         <div class="coluna" id="ESTUDIO">
             <section class="box1">
-                <img class="imgb" src="https://s0.geograph.org.uk/geophotos/05/78/43/5784317_48c8dd6b.jpg">
-                <img class="imgb2" src="https://i.pinimg.com/736x/fe/c8/f7/fec8f754435a1e8f667a19de6a942365.jpg">
-                <img class="imgb3"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlJBRxiEeEDAV9NT7E1sKKEvAPFBmn4C4A5A&usqp=CAU">
-                <img class="imgb4" src="https://s3-media0.fl.yelpcdn.com/bphoto/uCli5Rj8pzlRMUY5xt7AIQ/l.jpg">
+
+                <img id="myImg" src="https://s0.geograph.org.uk/geophotos/05/78/43/5784317_48c8dd6b.jpg" alt=""
+                    class="imgb">
+                <img id="myImg2" src="https://i.pinimg.com/736x/fe/c8/f7/fec8f754435a1e8f667a19de6a942365.jpg" alt=""
+                    class="imgb2">
+                <img id="myImg3"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlJBRxiEeEDAV9NT7E1sKKEvAPFBmn4C4A5A&usqp=CAU"
+                    alt="" class="imgb3">
+                <img id="myImg4" src="https://s3-media0.fl.yelpcdn.com/bphoto/uCli5Rj8pzlRMUY5xt7AIQ/l.jpg" alt=""
+                    class="imgb4">
+
+
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+
+
+                <script>
+                    var modal = document.getElementById("myModal");
+                    var img = document.getElementById("myImg");
+                    var modalImg = document.getElementById("img01");
+                    var captionText = document.getElementById("caption");
+                    img.onclick = function () {
+                        modal.style.display = "block";
+                        modalImg.src = this.src;
+                        captionText.innerHTML = this.alt;
+                    }
+                    var span = document.getElementsByClassName("close")[0];
+                    span.onclick = function () {
+                        modal.style.display = "none";
+                    }
+                </script>
+
+                <script>
+                    var modal = document.getElementById("myModal");
+                    var img = document.getElementById("myImg2");
+                    var modalImg = document.getElementById("img01");
+                    var captionText = document.getElementById("caption");
+                    img.onclick = function () {
+                        modal.style.display = "block";
+                        modalImg.src = this.src;
+                        captionText.innerHTML = this.alt;
+                    }
+                    var span = document.getElementsByClassName("close")[0];
+                    span.onclick = function () {
+                        modal.style.display = "none";
+                    }
+                </script>
+
+                <script>
+                    var modal = document.getElementById("myModal");
+                    var img = document.getElementById("myImg3");
+                    var modalImg = document.getElementById("img01");
+                    var captionText = document.getElementById("caption");
+                    img.onclick = function () {
+                        modal.style.display = "block";
+                        modalImg.src = this.src;
+                        captionText.innerHTML = this.alt;
+                    }
+                    var span = document.getElementsByClassName("close")[0];
+                    span.onclick = function () {
+                        modal.style.display = "none";
+                    }
+                </script>
+
+                <script>
+                    var modal = document.getElementById("myModal");
+                    var img = document.getElementById("myImg4");
+                    var modalImg = document.getElementById("img01");
+                    var captionText = document.getElementById("caption");
+                    img.onclick = function () {
+                        modal.style.display = "block";
+                        modalImg.src = this.src;
+                        captionText.innerHTML = this.alt;
+                    }
+                    var span = document.getElementsByClassName("close")[0];
+                    span.onclick = function () {
+                        modal.style.display = "none";
+                    }
+                </script>
 
             </section>
             <div class="font box2">
@@ -215,47 +292,49 @@
                 <br>
                 <p><mark>AGENDE PELO SITE</mark></p><br>
                 <form method="get" action="Obrigado.html">
-                    <label>Digite seu nome:</label><br>
+                    <label>Escreva seu nome:</label><br>
                     <input class="inputbox" type="text" name="nome" required><br><br>
 
                     <label>Digite seu número para contato:</label><br>
                     <input class="inputbox" type="tel" placeholder="(83)91234-5678" name="numero" required><br><br>
 
                     <label for="birthdaytime">Marque o dia e horário da sessão:</label><br>
-                    <input class="inputbox" type="datetime-local" id="diaagend" name="diaagend" min="2024-05-29 00:00" max="2024-05-31 00:00" ><br><br>
+                    <input class="inputbox" type="datetime-local" id="diaagend" name="diaagend" min="2024-05-29 00:00"
+                        max="2024-05-31 00:00"><br><br>
 
                     <label>Mensagem:</label><br>
-                    <textarea class="inputbox" placeholder="Escreva sobre sua tatuagem aqui." name="mensagem"></textarea><br><br>
+                    <textarea class="inputbox" placeholder="Escreva sobre sua tatuagem aqui."
+                        name="mensagem"></textarea><br><br>
 
                     <label>Tatuador:</label><br>
-                    <select class="inputbox" name="assunto"required>
-                      <option value="brenno">Brenno Lucas (Tatuagens Delicadas)</option>
-                      <option value="ho">Gabriel Pereira (Tatuagens Realistas)</option>
-                      <option value="jeova">Jeová Moreira (Tatuagens Geeks)</option>
-                      <option value="luccas">Luccas Pontes (Tatuagens Tribais)</option>
-                      <option value="zeus">Zeus Fontes (Tatuagens BlackWork)</option>
-                      <option value="indefinido" selected>Ainda não decidi</option>
+                    <select class="inputbox" name="assunto" required>
+                        <option value="brenno">Brenno Lucas (Tatuagens Delicadas)</option>
+                        <option value="ho">Gabriel Pereira (Tatuagens Realistas)</option>
+                        <option value="jeova">Jeová Moreira (Tatuagens Geeks)</option>
+                        <option value="luccas">Luccas Pontes (Tatuagens Tribais)</option>
+                        <option value="zeus">Zeus Fontes (Tatuagens BlackWork)</option>
+                        <option value="indefinido" selected>Ainda não decidi</option>
                     </select><br><br>
 
-                    <label for="myfile">Mande uma referencia! <i>(opcional)</i>:</label><br>
+                    <label for="myfile">Mande uma referencia! <i><mark>(opcional)</mark></i>:</label><br>
                     <input class=" ref inputbox" type="file" id="ref" name="ref"><br><br>
 
                     <label for="html">Escolha a cor da tatuagem: </label><br>
                     <input type="radio" id="B/W" name="cor" value="B/W">
                     <label for="html">Preta e branca</label><br>
-                    
-                    
+
+
                     <input type="radio" id="VERMELHA" name="cor" value="VERMELHA">
                     <label for="css">Vermelha</label><br>
-                    
-                    
+
+
                     <input type="radio" id="COLORIDA" name="cor" value="COLORIDA">
                     <label for="javascript">Colorida</label><br>
 
                     <input type="radio" id="indefinido" name="cor" value="indefinido">
                     <label for="javascript">Ainda não sei</label><br>
-                    
-                    
+
+
 
                     <input class="cadas inputbox" type="submit" value="Enviar" required><br>
 
@@ -264,36 +343,49 @@
 
             <section class="box5">
                 <p>AGENDE PELO INSTAGRAM!</p>
-                
-                <div class="insta">
-                    <a href="https://www.instagram.com/"><img src="assets/instalogo.svg"></a>
-                    <a href="https://www.instagram.com/"><b><h1>@BRENNOTATTOO<i>(Brenno Luccas)</b></i></a></h1>
-                </div>
-                <div class="insta">
-                    <a href="https://www.instagram.com/"><img src="assets/instalogo.svg"></a>
-                    <a href="https://www.instagram.com/hozinnn/"><b><h1>@HOZINNN<i>(Gabriel Pereira)</b></i></a></h1>
-                </div>
-                <div class="insta">
-                    <a href="https://www.instagram.com/"><img src="assets/instalogo.svg"></a>
-                    <a href="https://www.instagram.com/"><b><h1>@JEOVASTICO<i>(Jeová Moreira)</b></i></a></h1>
-                </div>
-                <div class="insta">
-                    <a href="https://www.instagram.com/"><img src="assets/instalogo.svg"></a>
-                    <a href="https://www.instagram.com/lucc_pontes/"><b><h1>@LUCC_PONTES<i>(Luccas Pontes)</b></i></a></h1>
-                </div>
-                <div class="insta">
-                    <a href="https://www.instagram.com/"><img src="assets/instalogo.svg"></a>
-                    <a href="https://www.instagram.com/fonteszeus/"><b><h1>@FONTESZEUS<i>(Zeus Fontes)</b></i></a></h1>
 
-                    
+                <div class="insta">
+                    <a href="https://www.instagram.com/"><img src="assets/instalogo.svg"></a>
+                    <a href="https://www.instagram.com/"><b>
+                            <h1>@BRENNOTATTOO<i>(Brenno Luccas)
+                        </b></i></a></h1>
+                </div>
+                <div class="insta">
+                    <a href="https://www.instagram.com/"><img src="assets/instalogo.svg"></a>
+                    <a href="https://www.instagram.com/hozinnn/"><b>
+                            <h1>@HOZINNN<i>(Gabriel Pereira)
+                        </b></i></a></h1>
+                </div>
+                <div class="insta">
+                    <a href="https://www.instagram.com/"><img src="assets/instalogo.svg"></a>
+                    <a href="https://www.instagram.com/"><b>
+                            <h1>@JEOVASTICO<i>(Jeová Moreira)
+                        </b></i></a></h1>
+                </div>
+                <div class="insta">
+                    <a href="https://www.instagram.com/"><img src="assets/instalogo.svg"></a>
+                    <a href="https://www.instagram.com/lucc_pontes/"><b>
+                            <h1>@LUCC_PONTES<i>(Luccas Pontes)
+                        </b></i></a></h1>
+                </div>
+                <div class="insta">
+                    <a href="https://www.instagram.com/"><img src="assets/instalogo.svg"></a>
+                    <a href="https://www.instagram.com/fonteszeus/"><b>
+                            <h1>@FONTESZEUS<i>(Zeus Fontes)
+                        </b></i></a></h1>
+
+
                 </div>
                 <img class="sataninho" src="assets/demonine2.png">
 
                 </form>
 
+
             </section>
         </footer>
-
+        <div style="text-align: center;">
+            <b>InkMasters © Direitos reservados.</b>
+        </div>
     </main>
 
 </body>

@@ -10,11 +10,11 @@
 @import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap");
 
 main {
+    border-radius: 20px;
     max-width: 1800px;
     margin: auto;
     width: 100%;
-    background: white;
-    
+    background-image: linear-gradient(white,white,rgb(218, 218, 218),rgb(107, 107, 107),black);
 }
 
 
@@ -26,13 +26,16 @@ body {
 
 }
 .perfil{
-    width: 25%;
+    width: 500px;
+    height: 680px;
     margin: 30px;
+    border-radius: 10px;
     box-shadow: 0px 0px 20px 0px rgba(81, 81, 81, 0.47);
 }
 .perfildesc{
     display: flex;
 }
+
 .perfildesc h1{
     font-size: 60px;
     margin: 30px;
@@ -44,23 +47,43 @@ mark{
 }
 .perfildesc2{
     width: 35%;
+    margin-top: 40px;
 }
 .perfildesc2 h2{
     text-align: justify;
 }
 .comentario{
     width: 500px;
-    height: 200px;
+    height: 220px;
+    background-color: black;
+    margin: 50px;
+    margin-top: -40px;
+    box-shadow: 0px 0px 20px 0px rgba(81, 81, 81, 0.47);
+    border-radius: 50px;
+}
+.comentario3{
+    width: 250px;
+    height: 90px;
     background-color: black;
     margin: 50px;
     box-shadow: 0px 0px 20px 0px rgba(81, 81, 81, 0.47);
-    border-radius: 50px;
+    border-radius: 20px;
+    margin-top: -60px;
+    margin-left: 300px;
 }
 .comentariotexto{
     color: white;
     font-size: 30px;
     margin-top: 70px;
     margin-left: 40px;
+    padding-top: 55px;
+}
+.comentariotexto2{
+    color: white;
+    font-size: 14px;
+    margin-top: 70px;
+    margin-left: 25px;
+    padding-top: 25px;
 }
 .nometexto{
     color: white;
@@ -68,3 +91,102 @@ mark{
     margin-top: 12px;
     margin-left: 200px;
 }
+.estrelas{
+    display: flex;
+    width: 350px;
+    height: 37px;
+    margin-left: 160px;
+    justify-content: center;
+}
+.comentario2{
+    width: 500px;
+    height: 220px;
+    background-color: black;
+    margin: 50px;
+    box-shadow: 0px 0px 20px 0px rgba(81, 81, 81, 0.47);
+    border-radius: 50px;
+    margin-top: 50px;
+}
+.galeriatatu{
+    margin: auto;
+    width: 97%;
+    
+}
+.galeriatatu img{
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.47);
+}
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+    
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    -ms-flex: 20%; /* IE10 */
+    flex: 20%;
+    max-width: 20%;
+    padding: 0 4px;
+
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+  .overlay{
+
+    color: black;
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px rgba(81, 81, 81, 0.47);
+    cursor: pointer;
+    border-radius: 10px;
+    width: 270px;
+    height: 75px;
+    margin-right: 20px;
+    margin-top: 20px;
+   
+    
+  }
+  .overlay p{
+    font-size: 50px;
+    text-align: center;
+    padding-top: 10px;
+  }
+  .voltar{
+    margin-left: 500px;
+    margin-top: 20px;
+  }
+  .voltar img{
+    width: 70px;
+    cursor: pointer;
+  }
+  .overlay:hover{
+    background-color: black;
+    color: white;
+    transition: .3s;
+  }
+  

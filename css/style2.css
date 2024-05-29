@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scrollbar-color: white black;
+    font-family: courier, arial, helvetica;
+}
+
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap");
+
+main {
+    max-width: 1800px;
+    margin: auto;
+    width: 100%;
+    background: white;
+    
+}
+
+
+body {
+
+    transition: background .4s ease-in;
+    background-image: repeating-linear-gradient(90deg, rgba(102,102,102, 0.09) 0px, rgba(102,102,102, 0.09) 1px,transparent 1px, transparent 60px),repeating-linear-gradient(0deg, rgba(102,102,102, 0.09) 0px, rgba(102,102,102, 0.09) 1px,transparent 1px, transparent 60px),repeating-linear-gradient(0deg, rgba(102,102,102, 0.09) 0px, rgba(102,102,102, 0.09) 1px,transparent 1px, transparent 10px),repeating-linear-gradient(90deg, rgba(102,102,102, 0.09) 0px, rgba(102,102,102, 0.09) 1px,transparent 1px, transparent 10px),linear-gradient(90deg, rgb(0,0,0),rgb(0,0,0));
+    
+
+}
+.perfil{
+    width: 25%;
+    margin: 30px;
+    box-shadow: 0px 0px 20px 0px rgba(81, 81, 81, 0.47);
+}
+.perfildesc{
+    display: flex;
+}
+.perfildesc h1{
+    font-size: 60px;
+    margin: 30px;
+}
+mark{
+    background-color: black;
+    color: white;
+    box-shadow: 0px 0px 20px 0px rgba(81, 81, 81, 0.47);
+}
+.perfildesc2{
+    width: 35%;
+}
+.perfildesc2 h2{
+    text-align: justify;
+}
+.comentario{
+    width: 500px;
+    height: 200px;
+    background-color: black;
+    margin: 50px;
+    box-shadow: 0px 0px 20px 0px rgba(81, 81, 81, 0.47);
+    border-radius: 50px;
+}
+.comentariotexto{
+    color: white;
+    font-size: 30px;
+    margin-top: 70px;
+    margin-left: 40px;
+}
+.nometexto{
+    color: white;
+    font-size: 25px;
+    margin-top: 12px;
+    margin-left: 200px;
+}
